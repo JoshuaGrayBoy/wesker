@@ -1,5 +1,0 @@
-sudo apt-get install portaudio
-sudo apt-get install espeak
-
-sudo python3 -m venv venv
-source venv/bin/activate
