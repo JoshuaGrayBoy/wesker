@@ -13,7 +13,7 @@ class AI():
     __name = ""
     __skill = []
    
-    def __init__(self, name=None):
+    def __init__(self, name=Wesker):
         self.engine = pyttsx3.init()
 
         voices = self.engine.getProperty('voices')
@@ -58,7 +58,7 @@ class AI():
 
     def listen(self):
            
-        phrase = ""
+        phrase = "I'm listening..."
         
         if self.r.AcceptWaveform(self.audio.read(4096,exception_on_overflow = False)): 
             self.before_listening.trigger()
